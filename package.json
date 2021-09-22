@@ -1,0 +1,21 @@
+{
+  "name": "greenhouseapi",
+  "version": "1.0.0",
+  "description": "green house api assignment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sarthak",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fast-csv": "^4.3.6",
+    "mongodb": "^3.5.8",
+    "mongoose": "^6.0.7",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.1.6",
+    "util": "^0.12.4"
+  }
+}
