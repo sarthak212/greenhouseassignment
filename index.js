@@ -20,7 +20,7 @@ const swaggerOptions = {
             contact: {
                 name: "Sarthak Kaushik"
             },
-            servers: ["http://localhost:1234"]
+            servers: ["http://localhost:1234","https://greenhouseassignment.herokuapp.com"]
         }
     },
     apis: ["index.js"]
