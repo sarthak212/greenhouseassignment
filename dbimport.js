@@ -10,7 +10,7 @@ csv.parseFile("greenhouse_gas_inventory_data_data.csv", {headers: true})
 .on("end", async () => {
   console.log(dataArr.length);
   // > 4187
-  const uri = "mongodb://localhost:27017";
+  const uri = "mongodb+srv://Sarthak:Sarthak@cluster0.ywmx1.mongodb.net/Cluster0?retryWrites=true&w=majority";
    const client = new MongoClient(uri,{ useNewUrlParser: true, useUnifiedTopology: true });
  
   try {
@@ -30,7 +30,6 @@ csv.parseFile("greenhouse_gas_inventory_data_data.csv", {headers: true})
 async function insertFile(client,dataArr) {
   const database = client.db('geoassignment');
   let country_list = await database.collection("country").find({}).toArray();
-  console.log("country List",country_list,dataArr[0]);
   let country_overview = {};
   let country_details = {};
   for(let k=0;k<dataArr.length;k++) {

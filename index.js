@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb://localhost:27017";
+const uri = "mongodb+srv://Sarthak:Sarthak@cluster0.ywmx1.mongodb.net/Cluster0?retryWrites=true&w=majority";
 const client = new MongoClient(uri,{ useNewUrlParser: true, useUnifiedTopology: true });
 var database;
 var ObjectId = require('mongodb').ObjectID;
